@@ -6,8 +6,6 @@ export function CartProvider({ children }) {
   const [cart, setCart] = useState([]);
 
   function addToCart (product) {
-    console.log(product);
-    console.log(cart);
     setCart((prevCart) => {
       const isExisting = prevCart.find((item) => item.id === product.id);
       if (isExisting) {
@@ -18,8 +16,13 @@ export function CartProvider({ children }) {
     });
   }
 
+  function deleteFromCart(productId) {
+    setCart((prev) => prev.filter((item) => item.id !== productId));
+  }
+
+  const clearCart = () => setCart([]); 
   return (
-    <CartContext.Provider value={{ cart, addToCart }}>
+    <CartContext.Provider value={{ cart, addToCart, deleteFromCart, clearCart }}>
       {children}
     </CartContext.Provider>
   );
