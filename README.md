@@ -1,12 +1,39 @@
-# React + Vite
+# Shopping Cart UI
+<table>
+  <thead>
+    <tr>
+      <th>Tech Stack/Package</th>
+      <th>Version</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Vite</td>
+      <td>^7.0.4</td>
+    </tr>
+    <tr>
+      <td>React</td>
+      <td>^19.1.0</td>
+    </tr>
+    <tr>
+      <td>tailwindcss</td>
+      <td>^4.1.11</td>
+    </tr>
+    <tr>
+      <td>json-server</td>
+      <td>^1.0.0-beta.3</td>
+    </tr>
+    <tr>
+      <td>react-icons</td>
+      <td>^5.5.0</td>
+    </tr>
+  </tbody>
+</table>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Learnings
+1. Create context
+2. Provide context globally
+3. Consume context using useContext hook
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Sources
+This project was part of an online course by Brad Traversy, "<a href="https://www.udemy.com/course/modern-react-from-the-beginning" target="_blank">Modern React From The Beginning</a>"
