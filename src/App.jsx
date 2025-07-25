@@ -9,9 +9,11 @@ function App() {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await fetch("http://localhost:5000/products");
+        const response = await fetch("/api/products");
         if (!response.ok) throw new Error("Failed to fetch data");
         const data = await response.json();
+        console.log(data);
+        
         setProducts(data);
       } catch(error) {
         setError(error.message);
